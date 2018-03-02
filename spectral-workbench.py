@@ -12,7 +12,7 @@ camera = picamera.PiCamera(framerate = 10)
 #camera settings may differ depending on device
 camera.rotation = 270
 camera.iso =1600
-camera.shutter_speed 8000000000
+camera.shutter_speed = 8000000000
 camera.resolution = (640, 480)
 camera.zoom = (0.25, 0.25, 0.5, 0.5)
 
