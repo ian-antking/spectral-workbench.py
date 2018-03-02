@@ -5,7 +5,7 @@ import requests
 import base64
 import urllib3
 
-irllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 camera = picamera.PiCamera(framerate = 10)
 
@@ -49,7 +49,7 @@ def workbench_upload(encoded_image):
 		'title': sample_name
 		},
 	'dataurl': encoded_image,
-	'token': api_token
+	#'token': api_token
 	}
 	
 	try:
