@@ -8,6 +8,7 @@ https://publiclab.org/w/lego-spectrometer
 The script can be initailised over SSH, but still requires the RPi to be connected to a monitor in order to show the camera preview. This will not work over a remote desktop.
 
 What is does:
+
   User inputs label for the spectrum.
   
   The script will show a preview of the spectrum to be caputured, before saving the image to /home/pi/Pictures with the file name set as the spectrum label.
@@ -18,6 +19,7 @@ What is does:
 
 
 Areas for improvement:
+
   Overlaying a guide across the camera preview to show where the specrum will be extracted for uploading.
   
   Do the extracted pixels need to be saved as an image before being encoded? Early versions required the image to be opened with the 'rb' perameter or encoding to fail. Any way round this would make the code shorter.
